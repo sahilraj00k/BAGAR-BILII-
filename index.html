@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bagar Billi</title>
+<style>
+:root{--bg:#0b141a;--card:#202c33;--ink:#e9edef;--mute:#8696a0;--pop:#00a884;--pink:#ff5d8f;--me:#005c4b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS",Verdana,sans-serif;min-height:100vh;font-size:clamp(19px,2.4vw,24px)}
+button,input{font:inherit}
+button{background:var(--pop);color:#fff;border:0;border-radius:10px;padding:13px 18px;font-weight:700;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:3px solid var(--pink)}
+input{background:#120d1a;color:var(--ink);border:1px solid #4a3a63;border-radius:10px;padding:13px;width:100%}
+h1,h2,h3{font-family:Georgia,serif;margin:0}
+.hide{display:none!important}
+#splash,#auth{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:24px;text-align:center}
+#splash{position:fixed;inset:0;background:var(--bg);z-index:9;animation:out .6s 2.2s forwards}
+@keyframes out{to{opacity:0;visibility:hidden}}
+.logo{font-size:80px}
+.title{font-size:54px;color:var(--pop)}
+.sub{color:var(--mute);margin-top:10px;max-width:300px}
+.sub b{color:var(--pink)}
+.box{width:100%;max-width:340px;display:grid;gap:10px;margin-top:20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid #3a2d4f}
+header h2{color:var(--pop)}
+nav{display:flex;gap:6px;padding:8px 12px;overflow-x:auto}
+nav button{background:var(--card);color:var(--ink);flex:1;white-space:nowrap}
+nav button.on{background:var(--pop);color:#fff}
+main{max-width:1180px;margin:0 auto;padding:12px}
+.card{background:var(--card);border-radius:14px;padding:14px}
+#chat{padding:0;overflow:hidden}.top{display:flex;align-items:center;gap:10px;background:#202c33;padding:10px 14px}.av{width:40px;height:40px;border-radius:50%;background:var(--pop);display:grid;place-items:center;font-size:22px}.top small{color:var(--mute);display:block;min-height:15px}#typ{color:var(--pop)!important}#msgs{height:60vh;overflow-y:auto;display:flex;flex-direction:column;gap:5px;padding:10px;background-color:#0b141a;background-image:radial-gradient(#16232b 1.5px,transparent 1.5px);background-size:22px 22px}.chips{display:flex;gap:6px;padding:8px 10px 0;background:#111b21}.chips button{background:#202c33;padding:5px 10px;font-size:18px}#chat .row{margin:0;padding:8px 10px;background:#111b21}.it{display:flex;gap:12px;align-items:center;padding:12px 14px;border-bottom:1px solid #1f2c34;cursor:pointer}.it:hover{background:#182229}.it small{color:var(--mute);display:block}.ask{font-family:Georgia,serif;font-size:1.25em;color:var(--pink);margin:0 0 14px}.ded{margin-top:18px}.ded b{color:var(--pop)}.day{align-self:center;background:#182229;color:var(--mute);font-size:12px;padding:4px 10px;border-radius:8px;margin:6px 0}.tm{display:block;text-align:right;font-size:11px;color:var(--mute);margin-top:2px}.me .tm{color:#53bdeb}
+.m{max-width:80%;padding:7px 11px;border-radius:12px;border-top-left-radius:2px;background:var(--card);align-self:flex-start;word-wrap:break-word}
+.m.me{background:var(--me);align-self:flex-end;border-radius:12px;border-top-right-radius:2px}
+.m small{display:block;color:var(--pop);font-size:12px}
+.row{display:flex;gap:8px;margin-top:10px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:620px){.grid4{grid-template-columns:repeat(2,1fr)}}
+.g{display:grid;gap:8px;align-content:start}
+.g h3{font-size:16px;color:var(--pop)}
+.big{font-size:34px;text-align:center;min-height:36px}
+.players{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+#wheel{width:300px;height:300px;max-width:100%;border-radius:50%;margin:14px auto;display:block;transition:transform 3s cubic-bezier(.1,.7,.1,1)}
+.love{font-size:88px;text-align:center;color:var(--pink);font-family:Georgia,serif}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.two{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#wheel{transition:none}}
+</style>
+</head>
+<bo
